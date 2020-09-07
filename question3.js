@@ -5,9 +5,12 @@ console.log(params);
 const id = params.get("id");
 console.log(id);
 
+newId = id.slice(0,-1);
+
+
 const gameContainer = document.querySelector(".gameContainer");
 
-const url = "https://api.rawg.io/api/games/" + id;
+const url = "https://api.rawg.io/api/games/" + newId;
 console.log(url);
 async function callApi(){
 
