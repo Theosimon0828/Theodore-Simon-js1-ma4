@@ -9,10 +9,9 @@ const gameContainer = document.querySelector(".gameContainer");
 
 const url = "https://api.rawg.io/api/games/" + id;
 console.log(url);
-const newUrl = url.trimRight();
 async function callApi(){
 
-    const response = await fetch(newUrl);
+    const response = await fetch(url);
     const results = await response.json();
     // const game = results.results;
 
